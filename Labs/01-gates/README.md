@@ -13,6 +13,8 @@ end architecture dataflow;
 ```
 Screenshot with simulated time waveforms
 
+! [DE Morgan´s law simulation](Images/Simulation
+
 Link to your public EDA Playground example
 
 LINK (https://www.edaplayground.com/x/SpQi).
