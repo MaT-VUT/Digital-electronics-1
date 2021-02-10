@@ -13,7 +13,7 @@ end architecture dataflow;
 ```
 Screenshot with simulated time waveforms
 
-[logo]:
+[logo]: images/Screenshot_1.png
 
 Link to your public EDA Playground example
 
