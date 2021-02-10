@@ -13,7 +13,7 @@ end architecture dataflow;
 ```
 Screenshot with simulated time waveforms
 
-! [DE Morgan´s law simulation](images/Simulation.png)
+! [DE Morgan´s law simulation](images/Obrazok.png)
 
 Link to your public EDA Playground example
 
