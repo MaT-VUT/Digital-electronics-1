@@ -6,6 +6,10 @@
 3. tretie
 
 ## Links
+https://www.vutbr.cz/
 
-http://github.com - automatic!
-[GitHub](http://github.com)
+## Table
+stĺpec 1 | stĺpec 2 
+---------| -------- 
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
