@@ -30,6 +30,6 @@ end architecture dataflow;
 
 ```
 Screenshot with simulated time waveforms
-
+![](images/Screenshot_2.png)
 Link to your public EDA Playground example
 (https://www.edaplayground.com/x/RWrj#)
