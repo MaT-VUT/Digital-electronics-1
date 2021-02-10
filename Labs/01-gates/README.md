@@ -11,3 +11,7 @@ begin
 
 end architecture dataflow;
 ```
+Screenshot with simulated time waveforms
+
+Link to your public EDA Playground example
+LINK (https://www.edaplayground.com/x/SpQi).
