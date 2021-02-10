@@ -11,5 +11,5 @@ https://www.vutbr.cz/
 ## Table
 stĺpec 1 | stĺpec 2 
 ---------| -------- 
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+bunka 1  |bunka 2 
+bunka 3  | bunka 4
