@@ -21,7 +21,7 @@ Listing of VHDL code design.vhd
  ```vhdl
 architecture dataflow of gates is
 begin
-    f_1lavastrana  <= (x_i and y_i) or (z_i and z_i);
+    f_1lavastrana  <= (x_i and y_i) or (x_i and z_i);
     f_1pravastrana <= x_i and (y_i or z_i);
     f_2lavastrana  <= (x_i or y_i) and (x_i or z_i);
     f_2pravastrana <= y_i or (y_i and z_i);
