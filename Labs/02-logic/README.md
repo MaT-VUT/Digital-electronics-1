@@ -30,7 +30,7 @@ Completed 2-bit comparator truth table.
 Karnaugh maps for all three functions
 
 ```
-![](images/1.jpg)
+![](images/4.jpg)
 ```
 
 ## 3
