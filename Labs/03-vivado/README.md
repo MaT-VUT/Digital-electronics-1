@@ -117,6 +117,6 @@ begin
 ![](images/1.jpg)
 
 
-## 3 A Vivado tutorial
+## 3 A Vivado tutorial (GIF)
 
 ![](images/2.gif)
