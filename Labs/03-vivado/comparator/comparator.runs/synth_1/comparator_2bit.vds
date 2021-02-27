@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb 24 21:00:16 2021
+# Process ID: 7892
+# Current directory: C:/Users/matus/Documents/VYSOKA SKOLA/6.semester/DE1/Digital-electronics-1/Labs/03-vivado/comparator/comparator.runs/synth_1
+# Command line: vivado.exe -log comparator_2bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source comparator_2bit.tcl
+# Log file: C:/Users/matus/Documents/VYSOKA SKOLA/6.semester/DE1/Digital-electronics-1/Labs/03-vivado/comparator/comparator.runs/synth_1/comparator_2bit.vds
+# Journal file: C:/Users/matus/Documents/VYSOKA SKOLA/6.semester/DE1/Digital-electronics-1/Labs/03-vivado/comparator/comparator.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source comparator_2bit.tcl -notrace
+Command: synth_design -top comparator_2bit -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27952
