@@ -2,9 +2,7 @@
 
 
 
-## 1 Preparation tasks (done before the lab at home)
-
-Completed 2-bit comparator truth table.
+## 1 Preparation tasks 
 
 | **Switch** | **PIN** |
 | :--------: | :-----: |
