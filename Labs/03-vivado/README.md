@@ -3,8 +3,7 @@
 
 
 ## 1 Preparation tasks 
-
-| **Switch** | **PIN** | LED  | **PIN** |
+| **Switch** | **PIN** | **LED**  | **PIN** |
 | :--------: | :-----: | :--: | :-----: |
 |     0      |   J15   |  0   |   H17   |
 |     1      |   L16   |  1   |   K15   |
@@ -118,6 +117,6 @@ begin
 ![](images/1.jpg)
 
 
-## 3 A Vivado tutorial
+## 3 A Vivado tutorial (GIF)
 
 ![](images/2.gif)
