@@ -4,18 +4,18 @@
 
 ## 1 Preparation tasks
 
-Decoder truth table for common anode 7-segment display
+Figure or table with connection of 7-segment displays on Nexys A7 board
 
-| Vstupný PIN | Tranzistor | **PIN** |
-| :---------: | :--------: | :-----: |
-|     U13     |    AN7     |   H17   |
-|     K2      |    AN6     |   K15   |
-|     T14     |    AN5     |   J13   |
-|     P14     |    AN4     |   N14   |
-|     J14     |    AN3     |   R18   |
-|     T9      |    AN2     |   V17   |
-|     J18     |    AN1     |   U17   |
-|     J17     |    AN0     |   U16   |
+| Vstupný PIN | Tranzistor |
+| :---------: | :--------: |
+|     U13     |    AN7     |
+|     K2      |    AN6     |
+|     T14     |    AN5     |
+|     P14     |    AN4     |
+|     J14     |    AN3     |
+|     T9      |    AN2     |
+|     J18     |    AN1     |
+|     J17     |    AN0     |
 
 | Výstupný PIN | **Rezistor** |
 | :----------: | :----------: |
@@ -27,27 +27,6 @@ Decoder truth table for common anode 7-segment display
 |     T11      |    CC, CD    |
 |     L18      |    CE, CF    |
 |     H15      |    CG, DP    |
-
-Figure or table with connection of 7-segment displays on Nexys A7 board 
-
-| **Switch** | **PIN** | **LED**  | **PIN** |
-| :--------: | :-----: | :--: | :-----: |
-|     0      |   J15   |  0   |   H17   |
-|     1      |   L16   |  1   |   K15   |
-|     2      |   M13   |  2   |   J13   |
-|     3      |   R15   |  3   |   N14   |
-|     4      |   R17   |  4   |   R18   |
-|     5      |   T18   |  5   |   V17   |
-|     6      |   U18   |  6   |   U17   |
-|     7      |   R13   |  7   |   U16   |
-|     8      |   T8    |  8   |   V16   |
-|     9      |   U8    |  9   |   T15   |
-|     10     |   R16   |  10  |   U14   |
-|     11     |   T13   |  11  |   T16   |
-|     12     |   H6    |  12  |   V15   |
-|     13     |   U12   |  13  |   V14   |
-|     14     |   U11   |  14  |   V12   |
-|     15     |   V10   |  15  |   V11   |
 
 Decoder truth table for common anode 7-segment display
 
@@ -165,6 +144,25 @@ hex2seg : entity work.hex_7seg
 
 Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting
 
+| Hex  | **PIN** | LED4 | LED5 | LED6 | LED7 |
+| :--: | :-----: | :--: | :--: | :--: | :--: |
+|  0   |  0000   |  1   |  0   |  0   |  0   |
+|  1   |  0001   |  0   |  0   |  1   |  1   |
+|  2   |  0010   |  0   |  0   |  0   |  1   |
+|  3   |  0011   |  0   |  0   |  1   |  0   |
+|  4   |  0100   |  0   |  0   |  0   |  1   |
+|  5   |  0101   |  0   |  0   |  1   |  0   |
+|  6   |  0110   |  0   |  0   |  0   |  0   |
+|  7   |  0111   |  0   |  0   |  1   |  0   |
+|  8   |  1000   |  0   |  0   |  0   |  1   |
+|  9   |  1001   |  0   |  0   |  1   |  0   |
+|  A   |  1010   |  0   |  1   |  0   |  0   |
+|  b   |  1011   |  0   |  1   |  1   |  0   |
+|  C   |  1100   |  0   |  1   |  0   |  0   |
+|  d   |  1101   |  0   |  1   |  1   |  0   |
+|  E   |  1110   |  0   |  1   |  0   |  0   |
+|  F   |  1111   |  0   |  1   |  1   |  0   |
+
   ```vhdl
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
     LED(4) <= '0' when(SW = "0000"); 
@@ -188,24 +186,5 @@ Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting
                 '0' when (SW = "0100") else
                 '0' when (SW = "1000");
   ```
-
-| Hex  | **PIN** | LED4 | LED5 | LED6 | LED7 |
-| :--: | :-----: | :--: | :--: | :--: | :--: |
-|  0   |  0000   |  1   |  0   |  0   |  0   |
-|  1   |  0001   |  0   |  0   |  1   |  0   |
-|  2   |  0010   |  0   |  0   |  0   |  1   |
-|  3   |  0011   |  0   |  0   |  1   |  0   |
-|  4   |  0100   |  0   |  0   |  0   |  1   |
-|  5   |  0101   |  0   |  0   |  1   |  0   |
-|  6   |  0110   |  0   |  0   |  0   |  0   |
-|  7   |  0111   |  0   |  0   |  1   |  0   |
-|  8   |  1000   |  0   |  0   |  0   |  1   |
-|  9   |  1001   |  0   |  0   |  1   |  0   |
-|  A   |  1010   |  0   |  1   |  0   |  0   |
-|  b   |  1011   |  0   |  1   |  1   |  0   |
-|  C   |  1100   |  0   |  1   |  0   |  0   |
-|  d   |  1101   |  0   |  1   |  1   |  0   |
-|  E   |  1110   |  0   |  1   |  0   |  0   |
-|  F   |  1111   |  0   |  1   |  1   |  0   |
 
 ![](images/2.jpg)
