@@ -6,13 +6,13 @@
 
 Figure or table with connection of push buttons on Nexys A7 board
 
-| **Button** | PIN  |
-| :--------: | :--: |
-|    BTNL    | P17  |
-|    BTNR    | M17  |
-|    BTNU    | M18  |
-|    BTND    | P18  |
-|    BTNC    | N17  |
+| **Button** | PIN  | /pressed | pressed |
+| :--------: | :--: | :------: | :-----: |
+|    BTNL    | P17  |  Low V   | High V  |
+|    BTNR    | M17  |  Low V   | High V  |
+|    BTNU    | M18  |  Low V   | High V  |
+|    BTND    | P18  |  Low V   | High V  |
+|    BTNC    | N17  |  Low V   | High V  |
 
 Table with calculated values
 
@@ -53,10 +53,14 @@ p_cnt_up_down : process(clk)
 Listing of VHDL reset and stimulus processes from testbench file `tb_cnt_up_down.vhd` with syntax highlighting and asserts
 
 ```vhdl
- p_reset_gen : process
+p_reset_gen : process
     begin
         s_reset <= '0';
         wait for 12 ns;
+        
+        assert (s_reset = '0')
+        -- If false, then report an error
+        report "Test failed for input on 12ns for reset" severity error;
         
         -- Reset activated
         s_reset <= '1';
@@ -79,8 +83,17 @@ Listing of VHDL reset and stimulus processes from testbench file `tb_cnt_up_down
         -- Change counter direction
         s_cnt_up <= '1';
         wait for 380 ns;
+        
+        assert (s_cnt = "1110")
+        -- If false, then report an error
+        report "Test failed for input on 220ns" severity error;
+            
         s_cnt_up <= '0';
         wait for 220 ns;
+        
+        assert (s_cnt = "1111")
+        -- If false, then report an error
+        report "Test failed for input on 230ns" severity error;
 
         -- Disable counting
         s_en     <= '0';
@@ -88,6 +101,7 @@ Listing of VHDL reset and stimulus processes from testbench file `tb_cnt_up_down
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
+
 ```
 Screenshot with simulated time waveforms
 
