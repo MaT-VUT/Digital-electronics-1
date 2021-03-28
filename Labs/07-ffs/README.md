@@ -5,7 +5,9 @@
 ## 1 Preparation tasks
 
 Characteristic equations and completed tables for D, JK, T flip-flops.
+
 q_(n+1})^D = d
+
 |  D   |  Qn  | Q(n+1) | Comments  |
 | :--: | :--: | :----: | :-------: |
 |  0   |  0   |   0    | No charge |
