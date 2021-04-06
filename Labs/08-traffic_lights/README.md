@@ -32,13 +32,11 @@ Figure with connection of RGB LEDs on Nexys A7 board and completed table with co
 | LD16 | N15, M16, R12 | 1,0,0 | 1,1,0  | 0,1,0 |
 | LD17 | N16, R11, G14 | 1,0,0 | 1,1,0  | 0,1,0 |
 
-![](images/2.jpg)
-
-
-
 ## 2 Traffic light controller
 
 State diagram
+
+![](images/2.jpg)
 
 Listing of VHDL code of sequential process `p_traffic_fsm`
 
